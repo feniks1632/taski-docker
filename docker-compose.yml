@@ -41,7 +41,7 @@ services:
   gateway:
     # Сбилдить и запустить образ, 
     # описанный в Dockerfile в папке gateway
-    build: ./nginx/
+    build: ./gateway/
     env_file: .env
     volumes:
       - static:/staticfiles/
