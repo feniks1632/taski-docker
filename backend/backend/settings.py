@@ -12,8 +12,6 @@ SECRET_KEY = os.getenv('SECRET_KEY', '657306')
 
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
