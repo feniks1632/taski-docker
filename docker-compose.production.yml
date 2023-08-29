@@ -14,6 +14,8 @@ services:
 
 
   backend:
+    depends_on:
+      - db
     image: eniks1632/taski_backend:1.1
     env_file: .env
     volumes:
@@ -29,8 +31,6 @@ services:
 
 
   gateway:
-    depends_on:
-    - backend
     image: eniks1632/taski_gateway:1.0
     env_file: .env
     volumes:
