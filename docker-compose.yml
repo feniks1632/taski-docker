@@ -41,6 +41,7 @@ services:
   gateway:
     depends_on:
     - backend
+    # запуск после backend
     # Сбилдить и запустить образ, 
     # описанный в Dockerfile в папке gateway
     build: ./gateway/

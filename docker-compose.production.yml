@@ -14,7 +14,7 @@ services:
 
 
   backend:
-    image: eniks1632/taski_backend:1.0
+    image: eniks1632/taski_backend:1.1
     env_file: .env
     volumes:
       - static_volume:/backend_static
