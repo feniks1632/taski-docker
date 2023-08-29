@@ -29,8 +29,7 @@ services:
       - static:/backend_static
 
     # Какие контейнеры нужно запустить до старта этого контейнера:
-    depends_on:
-      - db
+
   # Имя третьего контейнера. Это контейнер с фронтендом
   frontend:
     env_file: .env
